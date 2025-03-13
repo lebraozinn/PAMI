@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+            <button onclick="dizerOla()">Diga Olá</button>
+        <button onclick="aplicarEstilo()">Aplicar Estilo</button>
+        <button onclick="aumentarFonte()">Aumentar fonte</button>
+        <button onclick="reduzirFonte()">Reduzir fonte</button>
+        <button onclick="aplicarPurple()">Aplicar cor Purple</button>
+        <button onclick="aplicarBlue()">Aplicar cor Blue</button>
+        <button onclick="aplicarRed()">Aplicar cor Red</button>
+        <button onclick="aumentarMargens()">Aumentar margens</button>
+        <button onclick="reduzirMargens()">Reduzir margens</button>
+
+    <h1>Etec Sales Gomes</h1>
+
+        <script>
+
+let margin_size = 10;
+
+        function aumentarMargens(){
+margin_size++;
+marginSize();
+        }
+
+
+        function reduzirMargens(){
+margin_size--;
+marginSize();
+        }
+
+        function marginSize(){
+            titulo.style.margin =  margin_size + 'px'
+        }
+
+
+        function aplicarBlue(){
+                    titulo.style.backgroundColor = 'blue'
+                }
+
+
+
+
+        function aplicarPurple(){
+            titulo.style.backgroundColor = 'purple'
+        }
+
+            function aplicarRed(){
+                titulo.style.backgroundColor = 'red'
+            }
+
+                function aplicarSize(){
+                    font_size--;
+                    aplicarSize(); //para colocar em caso de estruturas repetitivas tipo essa:titulo.style.fontSize = font_size + 'px';
+                }
+
+            function reduzirFonte(){
+                font_size--;
+                titulo.style.fontSize = font_size + 'px';
+            }
+
+
+            let titulo = document.querySelector('h1');
+            let font_size = 12;
+
+            function aumentarFonte(){
+            font_size++;
+            titulo.style.fontSize = font_size + 'px';
+            }
+
+                function dizerOla(){
+                    alert('ola');
+                }
+
+
+            function aplicarEstilo(){
+                
+                let titulo = document.querySelector('h1');
+                titulo.style.backgroundColor = 'white';
+                titulo.style.fontSize = '64px';
+                titulo.style.fontFamily = 'Comic Sans MS';
+                titulo.style.marginTop = '100px';
+
+
+}
+
+        document.body.style.backgroundColor = 'purple';
+
+
+console.log(titulo); 
+    </script>
+</body>
+</html>
