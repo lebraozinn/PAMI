@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="addVeiculo1()"> add fusca</button>
+    <button onclick="addVeiculo2()"> add ferrari</button>
+    <button onclick="addVeiculo3()"> add uno</button>
+    <button onclick="addVeiculo4()"> add Jetski</button>
+
+
+
+    <div id="estacionamento"></div>
+
+   <script>
+
+    let imagem3 = document.createElement('img');
+    imagem3.setAttribute('src','https://pbs.twimg.com/profile_images/1613579362728644613/nSTx0l3u_400x400.jpg');
+
+
+    
+    let imagem1 = document.createElement('img');
+    imagem1.setAttribute('src','https://i.ytimg.com/vi/U3g0AIg6aTM/hqdefault.jpg');
+    
+    let imagem2 = document.createElement('img');
+    imagem2.setAttribute('src','https://live.staticflickr.com/3017/3044199297_f23fee2827.jpg');
+
+    let imagem4 = document.createElement('img');
+    imagem4.setAttribute('src','https://images3.memedroid.com/images/UPLOADED57/5689c7c33f81f.jpeg');
+
+    
+    
+    
+
+
+
+
+ function addVeiculo4(){
+
+        };
+
+
+     function addVeiculo3(){
+
+};
+
+     function addVeiculo2(){
+
+};
+
+
+        function addVeiculo1(){
+
+        };
+
+        let veiculo_1 = document.createElement('h1');
+        veiculo_1.innerText = 'fusca';
+        veiculo_1.style.color = 'white';
+        veiculo_1.style.backgroundColor = 'blue';
+        veiculo_1.style.fontSize = '28px';
+        veiculo_1.style.fontFamily = 'impact';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_1);
+
+
+        let veiculo_2 = document.createElement('h1');
+        veiculo_2.innerText = 'ferrari';
+        veiculo_2.style.color = 'white';
+        veiculo_2.style.backgroundColor = 'grey';
+        veiculo_2.style.fontSize = '28px';
+        veiculo_2.style.fontFamily = 'impact';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_2);
+
+
+        let veiculo_3 = document.createElement('h1');
+        veiculo_3.innerText = 'uno';
+        veiculo_3.style.color = 'white';
+        veiculo_3.style.backgroundColor = 'yellow';
+        veiculo_3.style.fontSize = '28px';
+        veiculo_3.style.fontFamily = 'impact';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_3);
+
+        let veiculo_4 = document.createElement('h1');
+        veiculo_4.innerText = 'Jetski';
+        veiculo_4.style.color = 'white';
+        veiculo_4.style.backgroundColor = 'black';
+        veiculo_4.style.fontSize = '28px';
+        veiculo_4.style.fontFamily = 'impact';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_4);
+      
+        document.querySelector('#estacionamento').appendChild(imagem1);//fusca//
+        document.querySelector('#estacionamento').appendChild(imagem2);//ferrari//
+          document.querySelector('#estacionamento').appendChild(imagem3); //uno//
+        document.querySelector('#estacionamento').appendChild(imagem4);//jetski//
+
+
+    </script>
+</body>
+</html>
